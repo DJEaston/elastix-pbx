@@ -1,19 +1,4 @@
 #!/bin/bash
-#
-# For Elastix 2.5 (FreePBX 2.11)
-# Filename: /etc/asterisk/scripts/mixmon-mp3-2.sh
-# Author: Andrey Sorokin (aka shadow_alone) andrey@sorokin.org
-# Article in Russian - http://andrey.org/mp3-elastix-2-5-frepbx-2-11/
-# -----------------------------------
-# To enable:
-# rpm -Uhv http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el5.rf.x86_64.rpm
-# yum --disablerepo=commercial-addons install ffmpeg lame
-# Settings->Advanced Settings
-# Display Readonly Settings - true
-# Override Readonly Settings - true
-# Post Call Recording Script - /etc/asterisk/scripts/mixmon-mp3-2.sh ^{YEAR} ^{MONTH} ^{DAY} ^{CALLFILENAME} ^{MIXMON_FORMAT} ^{MIXMON_DIR}
-# Override Call Recording Location - /var/spool/asterisk/monitor/
-# ------------------------------------
 
 YEAR=$1
 MONTH=$2
